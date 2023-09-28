@@ -1,0 +1,151 @@
+/* 
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 40vw;
+}
+
+.container p {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  margin: 1rem 0;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5rem;
+  display: flex;
+  padding: 1rem 0;
+}
+
+button,
+li {
+  font-family: inherit;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 27%);
+}
+
+button img {
+  margin-right: 0.5rem;
+}
+
+.container article:first-child img {
+  border-radius: 1rem 0 0 1rem;
+}
+
+article:last-child {
+  max-width: 50%;
+  padding: 2rem;
+  border-radius: 0 1rem 1rem 0;
+  background-color: white;
+}
+
+h1,
+li:first-child {
+  font-family: "Fraunces", sans-serif;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:first-child {
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5rem;
+  padding-right: 0.8em;
+}
+
+li:last-child {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  width: 100%;
+  outline: 0;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
